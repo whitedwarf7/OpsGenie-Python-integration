@@ -56,11 +56,9 @@ def getAlert():
         alert = request.form['alert']
 
         conf = opsgenie_sdk.configuration.Configuration()
-        conf.api_key['Authorization'] = 'c41a9cd9-1ea5-4926-8446-c8c74d098ccf'
-
+        conf.api_key['Authorization'] = '<Your-API-Key>'
         api_client = opsgenie_sdk.api_client.ApiClient(configuration=conf)
         alert_api = opsgenie_sdk.AlertApi(api_client=api_client)
-        # _request_id = '706ea47b-2465-4a21-9e33-7cca061f8499'
         try:
             get_response = alert_api.get_alert(identifier=alert, identifier_type='id')
             # print(get_response)
