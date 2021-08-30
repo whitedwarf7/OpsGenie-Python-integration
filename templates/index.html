@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <style>
+        .first_div {
+            margin: 2rem auto;
+            max-width: 70rem;
+
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+            padding: 2rem;
+            background-color: #ffffff;
+        }
+
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        input[type=text]:focus {
+            border: 3px solid #000000;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>OpsGenie API</title>
+</head>
+
+<body>
+
+    <div class="first_div">
+        <form action="#" method="POST">
+            <img src="./static/opsgenie.png" height="50px;" width="50px;"> 
+            <span style="font-family: 'Montserrat', sans-serif;font-size:20px;font-weight: normal;">OpsGenie Integration</span>
+            <p style="font-family: 'Montserrat', sans-serif;font-size:30px;font-weight: normal;">Alert Message<br /><br />
+                <input style="border-radius: 5px;font-size:20px;" type="text" name="message" />
+            </p>
+            <p style="font-family: 'Montserrat', sans-serif;font-size:30px;font-weight: normal;">Alias <br /><br />
+                <input style="border-radius: 5px;font-size:20px;" type="text" name="alias" />
+            </p>
+            <p style="font-family: 'Montserrat', sans-serif;font-size:30px;font-weight: normal;">Description <br /><br />
+                <input style="border-radius: 5px;font-size:20px;" type="text" name="desc" />
+            </p>
+            <p style="font-family: 'Montserrat', sans-serif;font-size:30px;font-weight: normal;">Entity <br /><br />
+                <input style="border-radius: 5px;font-size:20px;" type="text" name="entity" />
+            </p>
+            <p style="font-family: 'Montserrat', sans-serif;font-size:30px;font-weight: normal;">Priority <br /><br />
+                <input style="border-radius: 5px;font-size:20px;" type="text" name="priority" />
+            </p>
+            <!-- <p style="font-family: 'Montserrat', sans-serif;font-size:30px;font-weight: normal;">Description<br /><br />
+                <input style="border-radius: 5px;font-size:20px;" type="password" name="desc" />
+            </p> -->
+            <!-- <p style="font-family: 'Montserrat', sans-serif;font-size:30px;font-weight: normal;">Title <br /><br />
+                <input style="border-radius: 5px;font-size:20px;" type="text" name="title" />
+            </p>
+            <div style="font-family: 'Montserrat', sans-serif;font-size:30px;font-weight: normal;margin-bottom:15px;">
+                <span>Issue Type</span>
+            </div>
+            <div style="font-family: 'Montserrat', sans-serif;font-size:20px;font-weight: normal;">
+            <input type="radio" id="task" name="type" value="Task" />
+              <label for="task">Task</label><br>
+            <input type="radio" id="story" name="type" value="Story" />
+              <label for="story">Story</label><br>
+            <input type="radio" id="bug" name="type" value="Bug" />
+              <label for="bug">Bug</label>
+            </div><br> -->
+
+            <p><input
+                    style="background-color: black;border-radius: 5px;padding:20px;font-size: 20px;font-weight: normal;color:#ffffff;border-color: black;cursor: pointer;"
+                    type="submit" value="Submit" /></p>
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>
